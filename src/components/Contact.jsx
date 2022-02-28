@@ -12,7 +12,7 @@ export default function Contact() {
             <input type="text" placeholder=' Full Name'   name="name"/>
             <input type="email" placeholder='Email Address'  name="email" _replyto="thanks for the submission" />
             <textarea  placeholder='Tell me about the project' name='message'  />
-            <input type="hidden" name="_next" value="http://localhost:3000"></input>
+            <input type="hidden" name="_next" value="https://myportfolio-krish.vercel.app"></input>
             <input type="hidden" name="_subject" value="New submission!"></input>
             <input type="hidden" name="_captcha" value="false"></input>
             <input type="hidden" name="_autoresponse" value="Thanks for submitting your message,
