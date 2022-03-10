@@ -112,14 +112,14 @@ export default function Projects() {
        <div className="pWrapper">
        <div className="projectWrapper">
            <div className="projectDesc">
-               <h3> Todo List</h3>
+               <h3>  Blog App </h3>
                <p>
-                   This is a todo list to set your daily activities in it so that you dont have to remember what to do and what not to do.
+                   This is a blog app to send blogs to people annd it has different sections like recent posts, related posts and comments, etc
                </p>
           <div className="more">
               <div className="links">
-              <a   target="_blank" href= "https://621a2e952c2abffd07bd3179--objective-edison-d6dbd0.netlify.app/">Live Demo</a>
-              <a href=""  target='_blank'><Icon icon="ant-design:github-filled" width="30" height="30" /></a>
+              <a   target="_blank" href="https://blogapp-krish.vercel.app/">Live Demo</a>
+              <a href="https://github.com/Kristar1/blog"  target='_blank'><Icon icon="ant-design:github-filled" width="30" height="30" /></a>
               </div>
               <div className="language">
    <Icon  className='smallIcon'  icon="akar-icons:html-fill" />
@@ -130,8 +130,8 @@ export default function Projects() {
           </div>
            </div>
            <div className="projectImage">
-               <a href="https://621a2e952c2abffd07bd3179--objective-edison-d6dbd0.netlify.app/" target="_blank">
-             <img src="assets/p3.jpeg" alt="" /></a>
+               <a href="https://blogapp-krish.vercel.app/" target="_blank"/>
+                   <img src="assets/p5.jpg" alt="" />
            </div>
        </div></div>
      
