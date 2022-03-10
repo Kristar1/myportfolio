@@ -131,7 +131,7 @@ export default function Projects() {
            </div>
            <div className="projectImage">
                <a href="https://blogapp-krish.vercel.app/" target="_blank"/>
-                   <img src="assets/p5.jpg" alt="" />
+                   <img src="assets/p5.jpeg" alt="" />
            </div>
        </div></div>
      
