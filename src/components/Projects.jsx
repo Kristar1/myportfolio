@@ -33,6 +33,31 @@ export default function Projects() {
              <img src="assets/p4.jpeg" alt="" /></a>
            </div>
        </div></div> */}
+         <div className="pWrapper">
+       <div className="projectWrapper">
+           <div className="projectDesc">
+               <h3> Tinder Clone</h3>
+               <p>
+                   This is a tinder clone made with mern stack . It has all the features like signup/login, advanced authentication, matching people by swiping right and messaging them. Make and account and start texting.
+               </p>
+          <div className="more">
+              <div className="links">
+              <a   target="_blank" href="https://tinder-rust.vercel.app/dashboard">Live Demo</a>
+              <a href="https://github.com/Kristar1/tinderapp"  target='_blank'><Icon icon="ant-design:github-filled" width="30" height="30" /></a>
+              </div>
+              <div className="language">
+   <Icon  className='smallIcon'  icon="akar-icons:html-fill" />
+   <Icon  className='smallIcon' icon="cib:css3-shiled"  />
+   <Icon  className='smallIcon' icon="cib:javascript" />
+                  
+              </div>
+          </div>
+           </div>
+           <div className="projectImage">
+               <a href="https://tinder-rust.vercel.app/dashboard" target="_blank">
+             <img src="blob:https://vercel.com/2eeeb930-5a2b-4ba9-8f39-4848668c0cec" alt="" /></a>
+           </div>
+       </div></div>
            <div className="pWrapper">
        <div className="projectWrapper">
            <div className="projectDesc">
@@ -82,33 +107,10 @@ export default function Projects() {
            <div className="projectImage">
                <a target="_blank" href="https://kristar1.github.io/my-websites/">
              <img src="assets/p1.jpg" alt="" /></a>
+     
            </div>
        </div></div>
-       <div className="pWrapper">
-       <div className="projectWrapper">
-           <div className="projectDesc">
-               <h3> Filterable List</h3>
-               <p>
-                   This is a filterable list made with html, css and javascript.When you toggle the menu bar the list will change. 
-               </p>
-          <div className="more">
-              <div className="links">
-              <a   target="_blank" href="https://kristar1.github.io/filterproject/">Live Demo</a>
-              <a href="https://github.com/Kristar1/filterproject"  target='_blank'><Icon icon="ant-design:github-filled" width="30" height="30" /></a>
-              </div>
-              <div className="language">
-   <Icon  className='smallIcon'  icon="akar-icons:html-fill" />
-   <Icon  className='smallIcon' icon="cib:css3-shiled"  />
-   <Icon  className='smallIcon' icon="cib:javascript" />
-                  
-              </div>
-          </div>
-           </div>
-           <div className="projectImage">
-               <a href="https://kristar1.github.io/filterproject/" target="_blank">
-             <img src="assets/p2.jpeg" alt="" /></a>
-           </div>
-       </div></div>
+      
        <div className="pWrapper">
        <div className="projectWrapper">
            <div className="projectDesc">
