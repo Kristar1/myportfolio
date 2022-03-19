@@ -55,7 +55,7 @@ export default function Projects() {
            </div>
            <div className="projectImage">
                <a href="https://tinder-rust.vercel.app/dashboard" target="_blank">
-             <img src="blob:https://vercel.com/2eeeb930-5a2b-4ba9-8f39-4848668c0cec" alt="" /></a>
+             <img src="assets/tinder.png" alt="" /></a>
            </div>
        </div></div>
            <div className="pWrapper">
