@@ -42,7 +42,7 @@ export default function Projects() {
                </p>
           <div className="more">
               <div className="links">
-              <a   target="_blank" href="https://tinder-rust.vercel.app/dashboard">Live Demo</a>
+              <a   target="_blank" href="https://tinder-rust.vercel.app">Live Demo</a>
               <a href="https://github.com/Kristar1/tinderapp"  target='_blank'><Icon icon="ant-design:github-filled" width="30" height="30" /></a>
               </div>
               <div className="language">
@@ -54,7 +54,7 @@ export default function Projects() {
           </div>
            </div>
            <div className="projectImage">
-               <a href="https://tinder-rust.vercel.app/" target="_blank">
+               <a href="https://tinder-rust.vercel.app" target="_blank">
              <img src="assets/tinder.png" alt="" /></a>
            </div>
        </div></div>
@@ -116,7 +116,7 @@ export default function Projects() {
            <div className="projectDesc">
                <h3>  Blog App </h3>
                <p>
-                   This is a blog app to send blogs to people annd it has different sections like recent posts, related posts and comments, etc
+                   This is a blog app to send blogs to people and it has different sections like recent posts, related posts and comments, etc
                </p>
           <div className="more">
               <div className="links">

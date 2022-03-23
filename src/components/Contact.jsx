@@ -1,6 +1,8 @@
 import React from 'react'
+import { useState } from 'react'
 
 export default function Contact() {
+  const [message, setMessage] = useState('')
   return (
     <div className='specialSection contact' id='contact'>
         <div className="contactLeft">
@@ -18,7 +20,8 @@ export default function Contact() {
             <input type="hidden" name="_autoresponse" value="Thanks for submitting your message,
             I will contact you as fast as possible"></input>
             <input type="hidden" name="_template" value="table"></input>
-            <button type='submit'> Submit</button>
+            {<p className='message'>{message}</p>}
+            <button type='submit' onClick={()=>{setMessage(' Thank You for your message, I will reply asap :)')}}> Submit</button>
         </form>
         </div>
     </div>

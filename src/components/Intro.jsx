@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link';
 export default function Intro() {
     const textRef= useRef();
     useEffect(()=>{
-        init(textRef.current, { showCursor: true,   backDelay:  1000, strings: ['Developer', 'Designer' ] })
+        init(textRef.current, { showCursor: true,   backDelay:  1000, strings: ['Web Developer', 'UI/UX Designer' ] })
     },[])
 
   return (
@@ -18,9 +18,8 @@ export default function Intro() {
     </div>
      <div className="right">
          <div className="wrapper">
-             <h2>Hi , I'm </h2>
-             <h1>Krish</h1>
-             <h3>Freelance <span ref={textRef}></span></h3>
+             <h1> Hi , I'm Krish</h1>
+             <h2>Freelance <span ref={textRef}></span></h2>
              <p>I will help your team win customers by building value through strategic web design, people-centric digital experiences, and developing high-quality websites that stand out from the competition.</p>
              <div className="text">
    Contact me <a href="#contact" className='circ' ><Icon icon="ep:arrow-right" width="30" height="30" /></a>
