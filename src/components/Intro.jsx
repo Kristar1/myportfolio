@@ -13,7 +13,7 @@ export default function Intro() {
     <div className='section intro' id='hero'>
     <div className="left">
         <div className="imgContainer">
-            <img src="assets\Blogging Minimalistic\Blogging Minimalistic\blogging.svg" alt="my img" />
+            <img src="assets/heroimg.webp" alt="my img" />
         </div>
     </div>
      <div className="right">
@@ -22,7 +22,9 @@ export default function Intro() {
              <h2>Freelance <span ref={textRef}></span></h2>
              <p>I will help your team win customers by building value through strategic web design, people-centric digital experiences, and developing high-quality websites that stand out from the competition.</p>
              <div className="text">
-   Contact me <a href="#contact" className='circ' ><Icon icon="ep:arrow-right" width="30" height="30" /></a>
+                 <div className='contactLine'>Contact me    <div className="underline"/></div>
+              
+    <a href="#contact" className='circ' ><Icon icon="ep:arrow-right" width="30" height="30" /></a>
   </div>
          </div>
        

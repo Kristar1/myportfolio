@@ -21,9 +21,14 @@ function App() {
         <Process/>
         <Contact/>
         <Footer/>
+        
       </div>
       }/>
       <Route path="/about" element={<><About/> <Footer/> </>}/>
+      <Route path="/skill" element={
+        <Skill/>
+
+      }/>
       </Routes>
     </Router>
   )

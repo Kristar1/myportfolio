@@ -17,11 +17,12 @@ export default function About() {
     <p> I develop websites with React , Mongodb as database and Node.js . I can also build professional websites with webflow.  </p>
     <p>Being a diligent, hardworking and result oriented person, I always work towards achieving best result on each project I lay my hands on.</p>
     <div className="text">
-    <text className='bold'> Get to know me better</text>
-    <div className="circle"><a href="#skillset"><Icon icon="ep:arrow-down" /></a></div> 
+    <div className='bold'> Get to know me better</div>
+    <div className="circle"><a href="#skillset"><Icon  className="downarrow" icon="ep:arrow-down" /></a></div> 
   </div>
   </div>
   </div>
+  
   <Skill/>
   <div className="getintouch">
     <h2>Have a project in mind?

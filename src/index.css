@@ -74,6 +74,7 @@ code {
   color: #131313;
   
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 125px;
@@ -182,6 +183,12 @@ background-color: white;
     margin: 0;
   }
   
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
   #mobile-menu{
     position: absolute;
     top: 20%;
@@ -208,6 +215,10 @@ background-color: white;
   }
   #mobile-menu.is-active .bar:nth-child(3){
  transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .underlineTopbar{
+    display: none;
   }
 }
 
@@ -253,11 +264,11 @@ background-color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   float: right;
 }
 .imgContainer img{
-  height: 90%;
+  height: 70%;
 }
 .right{
   flex:0.5;
@@ -274,7 +285,7 @@ background-color: white;
     justify-content: center;
     
   }
-  
+ 
   
   .message{
     color: rgb(79, 224, 79);
@@ -348,6 +359,41 @@ background-color: white;
 
 
 
+@media screen and (max-width:1100px) {
+
+  .intro{
+ flex-direction: column;
+ align-items: center;
+ overflow-x: hidden;
+
+  }
+  .imgContainer{
+    align-items: flex-start;
+    width: 415px;
+
+  }
+  .imgContainer img{
+    height: 50%;
+  }
+  .wrapper{
+    padding-left: 0;
+    align-items: center;
+
+  }
+  .wrapper h1{
+    font-size: 28px;
+  }
+
+.wrapper h3{
+  font-size: 20px;
+}
+.wrapper p{
+  width: 630px;
+}
+}
+.text{
+  padding-bottom: 40px;
+}
 @media screen and (max-width:775px) {
   .wrapper h2{
     padding-top: 10px;
@@ -870,6 +916,9 @@ padding-bottom: 25px;
   height: 30px;
   animation: arrowBlink 2s infinite;
 }
+.contactLine{
+  transition: 0.2s ease-in;
+}
 .circ{
   width: 50px;
   height: 50px;
@@ -883,10 +932,34 @@ padding-bottom: 25px;
   margin-left: 20px;
   transition: 0.6s ease-in;
 }
-.circ:hover{
+.text:hover .circ{
   background-color: black;
   color: white;
 }
+.underline{
+  background-color: black;
+  width: 0px;
+  height: 2px;
+  transition: 0.6s ease-in;
+
+
+}
+.underlineTopbar{
+  background-color: black;
+  width: 0px;
+  height: 2px;
+  transition: 0.6s ease-in;
+
+
+}
+
+.text:hover .underline{
+  width: 100px;
+}
+li:hover .underlineTopbar{
+width: 60%;
+}
+
 
 .circle{
   display: inline;
@@ -913,6 +986,9 @@ padding-bottom: 25px;
   color: white;
 
  
+}
+.circle:hover .downarrow{
+  color: white;
 }
 .circle a:hover{
   color: white;
@@ -972,27 +1048,37 @@ padding-right: 20px;
   background-color: black;
   color: white;
 }
-.skillset{
-height: 50vh;
-}
+
 .skillset h2{
   padding-top: 40px;
   text-align: center;
 
+
 }
 .skill{
+  margin-bottom:100px ;
+  /* padding-left: 1500px; */
   padding-top: 90px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   align-items: center;
+  flex-wrap: wrap;
+  /* overflow-x: scroll; */
+  /* -ms-overflow-style: none; Edge, Internet Explorer */
+/* scrollbar-width: none; Firefox */
 }
+.skill::-webkit-scrollbar {
+  display: none;
+}
+
 .Icon{
   color: rgb(19, 26, 94);
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 40px;
   transition: 0.7s ease-in-out;
 }
+
 .bigIcon{
   width: 140px;
   height: 140px;
@@ -1006,6 +1092,36 @@ height: 50vh;
 .bigIcon:hover{
   width: 160px;
   height: 160px;
+}
+
+@media screen and (max-width:775px) {
+  .about{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    overflow-x: hidden;
+  }
+  .aboutPara h1{
+    font-size: 40px;
+    padding-bottom: 25px;
+    }
+    .aboutPara{
+      max-width: 450px;
+    
+      padding: 40px 30px 40px 30px;
+    
+    }
+    .getintouch{
+      display: flex;
+     
+      align-items: center;
+      padding: 10px;
+      overflow-x: hidden;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
 }
 @media screen and (max-width:390px) {
   .about{
@@ -1050,35 +1166,6 @@ height: 50vh;
 
 }
 
-@media screen and (max-width:775px) {
-  .about{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    overflow-x: hidden;
-  }
-  .aboutPara h1{
-    font-size: 40px;
-    padding-bottom: 25px;
-    }
-    .aboutPara{
-      max-width: 450px;
-    
-      padding: 40px 30px 40px 30px;
-    
-    }
-    .getintouch{
-      display: flex;
-     
-      align-items: center;
-      padding: 10px;
-      overflow-x: hidden;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
-  
-}
 /* Process */
 .process{
   margin-left: 30px;
